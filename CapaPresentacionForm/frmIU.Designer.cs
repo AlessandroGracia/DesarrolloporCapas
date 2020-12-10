@@ -38,6 +38,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtResultados = new System.Windows.Forms.TextBox();
             this.txtMensaje = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -63,7 +65,7 @@
             // 
             this.txtSaldoInicial.Location = new System.Drawing.Point(185, 112);
             this.txtSaldoInicial.Name = "txtSaldoInicial";
-            this.txtSaldoInicial.Size = new System.Drawing.Size(172, 20);
+            this.txtSaldoInicial.Size = new System.Drawing.Size(249, 20);
             this.txtSaldoInicial.TabIndex = 2;
             // 
             // label3
@@ -124,11 +126,29 @@
             this.txtMensaje.Size = new System.Drawing.Size(300, 20);
             this.txtMensaje.TabIndex = 9;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(36, 226);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(172, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "INGRESE EL NUMERO DEL MES";
+            // 
+            // txtNum
+            // 
+            this.txtNum.Location = new System.Drawing.Point(214, 224);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(219, 20);
+            this.txtNum.TabIndex = 11;
+            // 
             // frmIU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtNum);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.txtResultados);
             this.Controls.Add(this.label5);
@@ -158,5 +178,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtResultados;
         private System.Windows.Forms.TextBox txtMensaje;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNum;
     }
 }

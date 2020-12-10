@@ -19,6 +19,12 @@ namespace CapaPresentacion
             string nombre = this.txtNombre.Text;
             CapaLogica.Contabilidad conta = new CapaLogica.Contabilidad();
             this.lblMensaje.Text = conta.Saludos(nombre);
+
+            double x = Double.Parse(this.txtSaldoInicial.Text);
+            this.lblSaldo.Text = conta.getSaldos(x).ToString();
+
+            int nummes = int.Parse(this.txtNum.Text);
+            this.lblMes.Text = CapaLogica.Utilidades.getNombredelMes(nummes);
         }
     }
 }
